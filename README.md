@@ -1,13 +1,6 @@
 
 # TETRISTE  
-**Projet de Programmation en C**  
-
-Louis de Domingo et Julien Amiel  
-
 2023-2024  
-
-## Description  
-TETRISTE est un jeu de puzzle inspiré du célèbre Tetris, enrichi de mécaniques originales et d'une interface moderne. Le projet combine des défis logiques avec une gestion dynamique des pièces, des niveaux de difficulté ajustables et un système de classement. Développé en langage C, il offre deux modes d'interaction : un terminal stylisé et une interface graphique via SDL.  
 
 ## Prérequis  
 - **GCC** (GNU Compiler Collection) installé sur votre système.  
