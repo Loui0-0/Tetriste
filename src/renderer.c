@@ -340,3 +340,13 @@ void render_displayPawn(Pawn** pawnPtrPtr){
 
 }
 
+void render_moveCursor(int x, int y) {
+	/*deplace le curseur aux coords (x,y) dans le terminal*/
+	printf("\033[%d;%dH", y, x);
+}
+
+
+void render_clearTerm(){
+	/*nettoie le terminal*/
+  	write(STDOUT_FILENO, "\e[1;1H\e[2J", 11);
+}
