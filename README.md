@@ -1,34 +1,41 @@
-#TETRISTE
 
-## Dépendances
+# TETRISTE  
+**Projet de Programmation en C**  
 
-SDL 2.0.20 SDL2_ttf SDL2_image 
+Louis de Domingo et Julien Amiel  
 
-## Installation des dépendances
+2023-2024  
 
-Assurez-vous d'avoir installé les bibliothèques SDL2, SDL2_image, et SDL2_ttf sur votre système.
+## Description  
+TETRISTE est un jeu de puzzle inspiré du célèbre Tetris, enrichi de mécaniques originales et d'une interface moderne. Le projet combine des défis logiques avec une gestion dynamique des pièces, des niveaux de difficulté ajustables et un système de classement. Développé en langage C, il offre deux modes d'interaction : un terminal stylisé et une interface graphique via SDL.  
 
-### Sur Ubuntu/Debian
+## Prérequis  
+- **GCC** (GNU Compiler Collection) installé sur votre système.  
+- **Bibliothèques SDL2** : SDL2, SDL2_image et SDL2_ttf.  
 
-```bash
-sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev
-```
+### Installation des dépendances sous Ubuntu/Debian  
+Exécutez la commande suivante :  
+`sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev`  
 
-## Compilation
+## Installation  
+1. Téléchargez ou clonez le dépôt du projet.  
+2. Ouvrez un terminal dans le dossier racine du projet.  
 
-Compilez le projet avec GCC en utilisant la commande suivante :
+Pour compiler le projet, utilisez la commande :  
+`gcc -Wall -I include -o app src/*.c \`sdl2-config --cflags --libs\` -lSDL2_image -lSDL2_ttf -lm`  
 
-```bash
-gcc -Wall -g -I include -o app src/*.c `sdl2-config --cflags --libs` -lSDL2_image -lSDL2_ttf -lm
-```
+## Utilisation  
+- **Mode terminal** (par défaut) : Exécutez `./app`.  
+- **Mode graphique** : Ajoutez l'option `-g` avec la commande `./app -g`.  
 
-Assurez-vous d'être dans le répertoire racine du projet avant de lancer cette commande.
+Le jeu propose :  
+- Trois niveaux de difficulté ajustant le nombre de formes, couleurs et pièces prévisualisées.  
+- Un système de sauvegarde automatique des parties et du classement.  
+- Une interface intuitive avec des contrôles affichés en temps réel.  
 
-## Exécution
+## Licence  
+Ce projet est distribué sous licence [MIT](https://fr.wikipedia.org/wiki/Licence_MIT).  
 
-L'application est lancé en mode terminal par defaut l'option -g
-lance en mode graphique
-
-```bash
-./app -g
-```
+## Auteurs  
+- **Julien Amiel**  
+- **Louis de Domingo**  
