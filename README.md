@@ -8,15 +8,17 @@
 
 ### Installation des dépendances sous Ubuntu/Debian  
 Exécutez la commande suivante :  
-`sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev`  
-
+```bash
+sudo apt-get install libsdl2-dev libsdl2-image-dev libsdl2-ttf-dev`  
+```
 ## Installation  
 1. Téléchargez ou clonez le dépôt du projet.  
 2. Ouvrez un terminal dans le dossier racine du projet.  
 
 Pour compiler le projet, utilisez la commande :  
-`gcc -Wall -I include -o app src/*.c \`sdl2-config --cflags --libs\` -lSDL2_image -lSDL2_ttf -lm`  
-
+```bash
+gcc -Wall -I include -o app src/*.c \`sdl2-config --cflags --libs\` -lSDL2_image -lSDL2_ttf -lm`  
+```
 ## Utilisation  
 - **Mode terminal** (par défaut) : Exécutez `./app`.  
 - **Mode graphique** : Ajoutez l'option `-g` avec la commande `./app -g`.  
